@@ -1,4 +1,3 @@
-CSS
 /* Reset and base styles */
 * {
     margin: 0;
@@ -357,3 +356,248 @@ nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: #f9fdff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.testimonial cite {
+    font-weight: 600;
+    color: #0099cc;
+    font-style: normal;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 5rem 5%;
+    background-color: #f0f9ff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    position: relative;
+}
+
+.contact-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #0099cc;
+}
+
+.contact-section > p {
+    max-width: 700px;
+    margin: 2rem auto;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 3rem auto;
+    text-align: left;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0099cc;
+}
+
+.success-message {
+    background-color: #e0f7ff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.success-message h3 {
+    color: #0099cc;
+    margin-bottom: 1rem;
+}
+
+.success-message p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 5% 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #0099cc;
+}
+
+.footer-logo span {
+    color: white;
+}
+
+.footer-logo p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    min-width: 200px;
+}
+
+.footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #0099cc;
+}
+
+.footer-disclaimer {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-disclaimer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.footer-disclaimer p {
+    color: #ccc;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.copyright {
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.copyright p {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem;
+    }
+    
+    .hero {
+        padding-top: 120px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .metrics, .features, .testimonials {
+        gap: 1rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
