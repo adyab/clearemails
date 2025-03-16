@@ -482,10 +482,7 @@ nav ul li a:hover {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    height: 250px; /* Set a fixed height for the container */
-    overflow: hidden; /* Hide any content that exceeds this height */
 }
-
 
 .testimonial {
     background-color: #f9fdff;
@@ -496,14 +493,11 @@ nav ul li a:hover {
     min-width: 300px;
     max-width: 400px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0; /* Initially hidden */
-    transform: scale(0.5); /* Initially scaled down */
 }
 
-.testimonial.show {
-    opacity: 1; /* Show when active */
-    transform: scale(1); /* Scale up when active */
-    transition: opacity 0.5s, transform 0.5s; /* Smooth transition */
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial p {
@@ -715,27 +709,9 @@ footer {
     }
     
     .hero {
-        height: auto;
-        padding-top: 100px; /* Adjust for fixed header */
+        padding-top: 120px;
     }
     
-    .hero-content {
-        margin-bottom: 2rem;
+    .hero h2 {
+        font-size: 2rem;
     }
-    
-    .purity-meter {
-        margin: 0 auto;
-    }
-    
-    .features {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    
-    .testimonial {
-        min-width: 250px;
-    }
-    
-    .contact-form {
-        margin: 0 auto;
-    }
-}
