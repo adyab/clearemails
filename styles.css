@@ -482,7 +482,10 @@ nav ul li a:hover {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    height: 250px; /* Set a fixed height for the container */
+    overflow: hidden; /* Hide any content that exceeds this height */
 }
+
 
 .testimonial {
     background-color: #f9fdff;
